@@ -1,0 +1,69 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider-dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.dot{
+    margin:  10px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 7px ;
+}
+.dot.active{
+     background-color: rgb(189, 78, 78); /*стилі для активного дота */
+}
+
+.sloder-gallary_img {
+    position: absolute; 
+    width: 500px;
+    animation-name: imgFade;  /* Назва використаної анімацї */
+    animation-duration: 4s;  /* Тривалість анімації */
+    left: -1000%; /* початкове розміщення картинки за екраном */
+    opacity: 0 ;
+    
+}
+.item{
+    opacity: 1;
+    display: none;
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+.item.active{
+    display: block; /*стилі для активного слайда */
+}
+
+/* анімація переходу */
+ @keyframes imgFade{
+     /*при 15%*/
+    15%{
+        opacity: 0.0; /*видимість 0*/
+        left: -100%; /*розташування*/
+    }
+    /*при 50%*/
+    50%{
+        opacity: 1; /*видимість 1*/
+        left: 0;    /*розташування*/
+    }
+   /*при 100%*/
+    100%{
+        left: 100%; /*розташування*/
+        opacity: 0.0; /*видимість 0*/
+    }
+}   

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Обгортка для центрування і вирівнювання контенту слайдера -->
+    <div class="wrapper">
+        <!-- Сам слайдер -->
+        <div class="slider">
+            <!-- Галарея слайдера -->
+            <div class="slider-gallary">
+                <!-- Окремі айтеми для кожного слайду -->
+                <!-- Клас active потрібний для відображення активного слайдера(всі решта відключені) -->
+                <div class="item active">
+                    <!-- Безпосередньо картинка -->
+                    <img class="sloder-gallary_img " src="images/lake_stone_fog_227519_1920x1080.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="sloder-gallary_img " src="images/stepan_cat_stepan_pet_227433_1920x1080.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="sloder-gallary_img " src="images/tree_silhouette_clouds_227538_1920x1080.jpg" alt="">
+                </div>
+            </div>
+            <!-- Функціональні кнопки і доти слайдера -->
+            <!-- Блок кнопок і дотів слайдера -->
+            <div class="slider-buttons">
+                <!-- Доти -->
+                <div class="slider-dots">
+                    <!-- Те саме active потрібний для відображення червоним активного дота (решта чорні) -->
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+               <!-- Кнопка слайду вперед -->
+                <button id="prev" >
+                    Туда    
+                </button>
+               <!-- Кнопка слайду назад -->
+                <button id="next" >
+                    Сюда
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Підключення скріпта -->
+<script src="script.js"></script>
+
+</html>
+
